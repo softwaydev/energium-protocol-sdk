@@ -7,8 +7,8 @@ from enum import Enum
 
 from pydantic.utils import sequence_like
 
-from gnt9.fields import reception, patient
-from gnt9.fields.base import EnergiumField
+from energium_protocol_sdk.fields import reception, patient
+from energium_protocol_sdk.fields.base import EnergiumField
 
 
 class EnergiumDelimiter(str, Enum):

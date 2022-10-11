@@ -1,4 +1,4 @@
-from gnt9.fields.base import EnergiumField
+from energium_protocol_sdk.fields.base import EnergiumField
 
 
 class Id(EnergiumField, str):
