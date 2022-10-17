@@ -70,8 +70,8 @@ class Patient(EnergiumModel):
 
     id: patient.Id
     name: patient.Name
-    sex: patient.Sex
-    age: patient.Age
+    sex: Optional[patient.Sex]
+    age: Optional[patient.Age]
     room: Optional[patient.Room]
 
 
