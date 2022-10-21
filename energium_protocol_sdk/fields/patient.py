@@ -27,4 +27,4 @@ class OperationalOrKiosk(EnergiumField, str):
     Y - default and means "operational" side
     N - means "kiosk" side
     """
-    code = "PR"
+    code = "PC"
