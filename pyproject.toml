@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "energium-protocol-sdk"
-version = "0.0.2"
+version = "0.0.3"
 description = ""
 authors = ["dyus <dyuuus@gmail.com>"]
 
