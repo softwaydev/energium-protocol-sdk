@@ -73,6 +73,7 @@ class Patient(EnergiumModel):
     sex: Optional[patient.Sex]
     age: Optional[patient.Age]
     room: Optional[patient.Room]
+    results_side: Optional[patient.OperationalOrKiosk]
 
 
 class Reception(EnergiumModel):

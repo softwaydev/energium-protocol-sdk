@@ -19,3 +19,12 @@ class Age(EnergiumField, str):
 
 class Room(EnergiumField, str):
     code = "PR"
+
+
+class OperationalOrKiosk(EnergiumField, str):
+    """GNT-9 can give results on "operational side" or "kiosk" side*
+    Possible values are Y and N
+    Y - default and means "operational" side
+    N - means "kiosk" side
+    """
+    code = "PR"
