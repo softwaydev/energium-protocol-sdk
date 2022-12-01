@@ -36,12 +36,12 @@ class EnergiumModel(BaseModel):
         elif sequence_like(v) and v:
             list_delimiter: Optional[EnergiumDelimiter] = v[0].list_delimiter
             if list_delimiter:
-                result += f"{list_delimiter}{newline}"
+                result += f"{list_delimiter.value}{newline}"
             for item in v:
                 result += self._get_energium_value(item, pretty)
             if list_delimiter:
-                cnt = list_delimiter.count("^")
-                closing_delimiter = list_delimiter.replace("^" * cnt, "^" * cnt + "_")
+                cnt = list_delimiter.value.count("^")
+                closing_delimiter = list_delimiter.value.replace("^" * cnt, "^" * cnt + "_")
                 result += f"{closing_delimiter}{newline}"
         else:
             raise ConfigError(
